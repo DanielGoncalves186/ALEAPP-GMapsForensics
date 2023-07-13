@@ -1,8 +1,11 @@
+#Authors: Daniel Gonçalves {danielgoncalves.mtr@gmail.com} | João Martins {jpjoao13@gmail.com}
+#Date: 2023-07-13
+#Version: 1.0.0
+
 import xml.etree.ElementTree as ET
 
-from datetime import datetime
 from scripts.artifact_report import ArtifactHtmlReport
-from scripts.ilapfuncs import logfunc, tsv, timeline, is_platform_windows, open_sqlite_db_readonly
+from scripts.ilapfuncs import tsv
 
 def get_GMapsFirstUsed(files_found, report_folder, seeker, wrap_text):
     firstUsed = ''
